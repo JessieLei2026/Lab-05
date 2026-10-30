@@ -191,7 +191,9 @@ Are chocolate candies more likely to be candy bars? Make a filled bar plot with 
 
 ```{r}
 # Your code here
-
+candy_rankings %>%
+  ggplot(aes(x = chocolate, fill = bar)) +
+  geom_bar()
 ```
 
 
