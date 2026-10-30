@@ -129,9 +129,9 @@ Fill in the blanks, remove the # symbol in front of your code and the execute th
 
 ```{r}
 # Your code here
-#ggplot(candy_df, aes(x = ___________)) +
-#  geom_histogram() +
-#  facet_wrap(___________)
+ggplot(candy_df, aes(x = winpercent)) +
+  geom_histogram() +
+  facet_wrap(~ chocolate)
 
 ```
 
