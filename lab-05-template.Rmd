@@ -173,7 +173,11 @@ Do more expensive candies win more often? Make a scatterplot of pricepercent (x)
 
 ```{r}
 # your code here
-
+candy_rankings %>%
+ggplot(mapping = aes(
+         x = pricepercent, y = winpercent, color = chocolate)) +
+         geom_point(alpha = 0.5)+
+         geom_smooth(method = lm)
 ```
 
 
